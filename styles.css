@@ -1,68 +1,12 @@
 /* CSS styles for Web Basic Project - Kali Birdsall */
 
-.container {
-    padding-left: 13%;
-    padding-right: 13%;
-    box-sizing: border-box;
-}
-
-.containerheader {
-    padding-left: 13%;
-    padding-right: 13%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    box-sizing: border-box;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/*flexbox at header so kb logo and navmenu are separated*/
-.containerheader nav {
-    display: flex;
-    gap: 30px;
-}
-
-.containerheader nav a {
-    /* For nav bar-only */
-}
-
-.intro-flex {
-    display: flex;
-    gap: 100px;
-    align-items: center;
-}
-
-.img-about {
-    width: 300px;
-    height: auto;
-    border-radius: 15px;
-    flex-shrink: 0;
-}
-
-.about-text {
-flex: 1;
-}
-
-.about-text h1 {
-    margin-top: 0;
-}
-
-.footer-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 body {
     font-size: 16px; 
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     margin: 0;
 }
 
-
-/*Font from google*/
+/*Poppins font from google*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 h1 {
@@ -141,15 +85,15 @@ a.link-light:hover {
 
 /* Table stuff*/
 
-ul, ol {
-    font-size: 1.1rem;
-    line-height: 1.6em;
-}
-
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 30px;
+}
+
+ul, ol {
+    font-size: 1.1rem;
+    line-height: 1.6em;
 }
 
 th, td {
@@ -177,7 +121,7 @@ img {
     border-radius: 15px;
 }
 
-/*Icon images (for LinkedIn icon)*/
+/*Icon images (for LinkedIn icon & future icons)*/
 .img-icon {
     width: 50px;
     height: auto;
@@ -190,7 +134,6 @@ iframe {
     height: 800px;
     border: none;
 }
-
 
 #header {
     width: 100%;
@@ -220,6 +163,35 @@ iframe {
     max-width: 65%;
 }
 
+.container {
+    padding-left: 13%;
+    padding-right: 13%;
+    box-sizing: border-box;
+}
+
+.containerheader {
+    padding-left: 13%;
+    padding-right: 13%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerheader nav {
+    display: flex;
+    gap: 30px;/*keep for spacing for future additional nav menu items*/
+}
+
+.intro-flex {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
 /* About page */
 #aboutintrosection { 
     background-color: #ceeaf4;
@@ -229,6 +201,21 @@ iframe {
     border-bottom-right-radius: 50px;
     padding-top: 150px;
     padding-bottom: 100px;
+}
+
+.img-about {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    flex-shrink: 0;
+}
+
+.about-text {
+flex: 1;
+}
+
+.about-text h1 {
+    margin-top: 0;
 }
 
 /* Colored background - case study pages */
@@ -248,7 +235,6 @@ iframe {
     box-sizing: border-box;
     padding-top: 100px;
 }
-
 
 #section1 {
     background-color: white;
@@ -335,4 +321,10 @@ iframe {
     font-size: 0.8em;
     color: white;
     margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
