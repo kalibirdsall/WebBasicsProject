@@ -1,0 +1,338 @@
+/* CSS styles for Web Basic Project - Kali Birdsall */
+
+.container {
+    padding-left: 13%;
+    padding-right: 13%;
+    box-sizing: border-box;
+}
+
+.containerheader {
+    padding-left: 13%;
+    padding-right: 13%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*flexbox at header so kb logo and navmenu are separated*/
+.containerheader nav {
+    display: flex;
+    gap: 30px;
+}
+
+.containerheader nav a {
+    /* For nav bar-only */
+}
+
+.intro-flex {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.img-about {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    flex-shrink: 0;
+}
+
+.about-text {
+flex: 1;
+}
+
+.about-text h1 {
+    margin-top: 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    font-size: 16px; 
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+/*Font from google*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+h1 {
+    font-size: 4em;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 3.3em;
+    font-weight: 400;
+    margin: 0;
+}
+
+h3 {
+    font-size: 2.5em;
+    font-weight: 400;
+    margin: 0;
+}
+
+p {
+    font-size: 1.1em; 
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6em;
+}
+
+a {
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6em;
+}
+
+/* link states for a dark background*/
+a.link-dark {
+    color: white;
+}
+
+a.link-dark:visited {
+    color: white;
+}
+
+a.link-dark:hover {
+    color: #D4FF00;
+}
+
+/*KEEPING THIS STYLE INCASE I WANT TO CHANGE THE NAV HOVER COLOR
+link states for top nav bar (light color background)*/
+a.link-nav {
+    color: black;
+    text-decoration: none;
+}
+
+a.link-nav:visited {
+    color: black;
+}
+
+a.link-nav:hover {
+    color: #a617c9;
+}
+
+/* link states for sections (with light color background) */
+a.link-light {
+    color: black;
+}
+
+a.link-light:visited {
+    color: black;
+}
+
+a.link-light:hover {
+    color: #a617c9;
+}
+
+/* Table stuff*/
+
+ul, ol {
+    font-size: 1.1rem;
+    line-height: 1.6em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 1.1em;
+}
+
+th {
+    background-color: #d6cee6;
+    font-weight: 600;
+}
+
+/*Responsive image style from slides */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*About page image so it fits nicely next to text*/
+.img-about {
+    width: 35%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/*Icon images (for LinkedIn icon)*/
+.img-icon {
+    width: 50px;
+    height: auto;
+    border-radius: 15px;
+}
+
+/*for p5 stuff*/
+iframe {
+    width: 100%;
+    height: 800px;
+    border: none;
+}
+
+
+#header {
+    width: 100%;
+    height: auto;
+    background: white;
+    color: black;
+    box-sizing: border-box;
+}
+
+.header-logo {
+    width: 43px;
+    height: auto;
+}
+
+/* Sections Styling */
+#introsection { /* Home page */
+    background-color: #d6cee6;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+#introsection p {
+    max-width: 65%;
+}
+
+/* About page */
+#aboutintrosection { 
+    background-color: #ceeaf4;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+/* Colored background - case study pages */
+#introsection2 { 
+    background-color: #f9fcd4;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+#section1title {
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 100px;
+}
+
+
+#section1 {
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 100px;
+}
+
+/* Grid for cards in section 1 - so I can add more cards later on another row below*/
+#section1 .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 75px;
+    margin-top: 50px;
+}
+
+#section2 {
+    background-color: #f0f0f0;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#section3 {
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* No extra margin on first h2 of section 3 */
+#section3 h2:first-of-type {
+    margin-top: 0;
+}
+
+/* Extra margin on all other h2 in section 3 */
+#section3 h2 {
+    margin-top: 80px;
+}
+
+.card {
+    background-color: #f0f0f0;
+    height: auto;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.card p {
+    padding: 0;
+    margin-top: 20px;
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.card img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+#footer {
+    width: 100%;
+    clear: left;
+    background: black;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-logo {
+    width: 40px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+/* small text for footer only */
+.footersmall-text {
+    font-size: 0.8em;
+    color: white;
+    margin: 0;
+}
