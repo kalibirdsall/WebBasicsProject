@@ -55,8 +55,7 @@ a.link-dark:hover {
     color: #D4FF00;
 }
 
-/*KEEPING THIS STYLE INCASE I WANT TO CHANGE THE NAV HOVER COLOR
-link states for top nav bar (light color background)*/
+/*link states for top nav bar (light color background)*/
 a.link-nav {
     color: black;
     text-decoration: none;
